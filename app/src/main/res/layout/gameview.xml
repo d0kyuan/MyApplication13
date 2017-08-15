@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:id="@+id/game_all">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        android:background="@drawable/c_bottom_boreder">
+
+        <TextView
+            android:text="目前題數"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView4"
+            android:layout_weight="1"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nowques"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:text="剩餘題數"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView11"
+            android:layout_weight="1"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/alcount"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:text="答對題數"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView6"
+            android:layout_weight="1"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rightans"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/textcolor" />
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:max="10" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="請從十進位轉二進位"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:id="@+id/show_tips"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/c_bottom_boreder"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/textcolor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ques_text"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/c_bottom_boreder"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textcolor" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:id="@+id/ans_text"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center"
+                    android:background="@drawable/c_bottom_boreder"
+                    android:inputType="text"
+                    android:textSize="30sp"
+                    android:textColor="@color/textcolor" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <Button
+            android:text="放棄"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/giveup"
+            android:layout_weight="1"
+            android:background="@drawable/c_bottom_boreder" />
+
+        <Button
+            android:text="檢查"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkans"
+            android:layout_weight="1"
+            android:background="@drawable/c_bottom_boreder" />
+    </LinearLayout>
+
+</LinearLayout>

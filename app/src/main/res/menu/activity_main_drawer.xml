@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/startgame"
+            android:title="開始遊戲" />
+        <item
+            android:id="@+id/his"
+            android:title="歷史紀錄" />
+    </group>
+
+    <item android:title="會員">
+        <menu>
+            <item
+                android:id="@+id/login"
+                android:title="登入" />
+            <item
+                android:id="@+id/sighup"
+                android:title="註冊" />
+            <item
+                android:id="@+id/logout"
+                android:title="登出" />
+        </menu>
+    </item>
+
+</menu>
